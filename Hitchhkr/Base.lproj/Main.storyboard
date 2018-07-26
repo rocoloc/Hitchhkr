@@ -21,17 +21,9 @@
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="AgT-AE-lld">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </mapView>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="25J-vI-EyT">
-                                <rect key="frame" x="10" y="10" width="97" height="30"/>
+                            <view verifyAmbiguity="off" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5i3-zb-0VQ" customClass="GradientView" customModule="Hitchhkr" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="124"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <view verifyAmbiguity="off" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5i3-zb-0VQ">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="91"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="WHj-3F-MV1">
                                 <rect key="frame" x="20" y="20" width="335" height="30"/>
@@ -57,7 +49,7 @@
                                             </label>
                                         </subviews>
                                     </stackView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KYn-gG-Shm">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sample-photo" translatesAutoresizingMaskIntoConstraints="NO" id="KYn-gG-Shm">
                                         <rect key="frame" x="305" y="0.0" width="30" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="30" id="kEM-34-ufG"/>
@@ -164,6 +156,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="mapView" destination="AgT-AE-lld" id="Fhx-fm-XlR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -173,5 +168,6 @@
     <resources>
         <image name="centerMapBtn" width="62" height="62"/>
         <image name="menuSliderBtn" width="30" height="24"/>
+        <image name="sample-photo" width="320" height="320"/>
     </resources>
 </document>
