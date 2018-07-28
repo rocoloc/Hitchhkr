@@ -49,7 +49,7 @@
                                             </label>
                                         </subviews>
                                     </stackView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sample-photo" translatesAutoresizingMaskIntoConstraints="NO" id="KYn-gG-Shm">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sample-photo" translatesAutoresizingMaskIntoConstraints="NO" id="KYn-gG-Shm" customClass="RoundImageView" customModule="Hitchhkr" customModuleProvider="target">
                                         <rect key="frame" x="305" y="0.0" width="30" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="30" id="kEM-34-ufG"/>
@@ -61,26 +61,7 @@
                                     <constraint firstAttribute="height" constant="30" id="yIa-Zm-avx"/>
                                 </constraints>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fTr-tY-Frs">
-                                <rect key="frame" x="20" y="587" width="335" height="60"/>
-                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="BWw-tW-ca8"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="AvenirNext-Heavy" family="Avenir Next" pointSize="28"/>
-                                <state key="normal" title="REQUEST RIDE">
-                                    <color key="titleColor" red="0.57045853140000002" green="0.57047235969999999" blue="0.57046490910000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dvx-FJ-5up">
-                                <rect key="frame" x="293" y="517" width="62" height="62"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="62" id="2Mx-CP-Zyo"/>
-                                    <constraint firstAttribute="height" constant="62" id="HrX-iS-Omf"/>
-                                </constraints>
-                                <state key="normal" image="centerMapBtn"/>
-                            </button>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7ky-TF-J2A">
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7ky-TF-J2A" customClass="RoundedShadowView" customModule="Hitchhkr" customModuleProvider="target">
                                 <rect key="frame" x="16" y="58" width="343" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -91,13 +72,18 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="VKz-Ny-PoO">
                                         <rect key="frame" x="0.0" y="0.0" width="117" height="22"/>
                                         <subviews>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JEA-mU-eiC">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JEA-mU-eiC" customClass="CircleView" customModule="Hitchhkr" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="3.5" width="15" height="15"/>
                                                 <color key="backgroundColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="15" id="8c9-Me-LVW"/>
                                                     <constraint firstAttribute="width" constant="15" id="HuS-0q-4hc"/>
                                                 </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" red="0.0" green="0.56031829119999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
                                             </view>
                                             <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="My Location" placeholder="My Location" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="G0t-td-beL">
                                                 <rect key="frame" x="25" y="0.0" width="92" height="22"/>
@@ -117,13 +103,18 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Fez-5E-Iaz">
                                         <rect key="frame" x="0.0" y="29" width="199.5" height="24"/>
                                         <subviews>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xzX-Yr-ASv">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xzX-Yr-ASv" customClass="CircleView" customModule="Hitchhkr" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="4.5" width="15" height="15"/>
                                                 <color key="backgroundColor" red="0.4756349325" green="0.47564673419999998" blue="0.47564041610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="15" id="ghO-jA-CK0"/>
                                                     <constraint firstAttribute="width" constant="15" id="mmh-hN-t6m"/>
                                                 </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" red="0.75406885150000003" green="0.75408679249999999" blue="0.75407713649999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
                                             </view>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Where are you going?" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fK1-ed-7j8">
                                                 <rect key="frame" x="25" y="0.0" width="174.5" height="24"/>
@@ -135,19 +126,49 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="djY-Gt-brk">
+                                <rect key="frame" x="0.0" y="587" width="375" height="80"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fTr-tY-Frs" customClass="RoundedShadowButtom" customModule="Hitchhkr" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="0.0" width="335" height="51"/>
+                                        <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Heavy" family="Avenir Next" pointSize="28"/>
+                                        <state key="normal" title="REQUEST RIDE">
+                                            <color key="titleColor" red="0.57045853140000002" green="0.57047235969999999" blue="0.57046490910000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="actionBtnWasPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gHO-LO-69a"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="Ljq-CV-NW1"/>
+                                    <constraint firstAttribute="trailing" secondItem="fTr-tY-Frs" secondAttribute="trailing" constant="20" id="TD0-wA-0x6"/>
+                                    <constraint firstItem="fTr-tY-Frs" firstAttribute="leading" secondItem="djY-Gt-brk" secondAttribute="leading" constant="20" id="aE7-1q-0d7"/>
+                                    <constraint firstItem="fTr-tY-Frs" firstAttribute="top" secondItem="djY-Gt-brk" secondAttribute="top" id="yRd-zw-0it"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dvx-FJ-5up">
+                                <rect key="frame" x="293" y="525" width="62" height="62"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="62" id="5QN-VV-tcy"/>
+                                    <constraint firstAttribute="height" constant="62" id="TqT-bo-YDL"/>
+                                </constraints>
+                                <state key="normal" image="centerMapBtn"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="fTr-tY-Frs" secondAttribute="bottom" constant="20" id="3uA-YI-yEV"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fTr-tY-Frs" secondAttribute="trailing" constant="20" id="55X-jB-24Q"/>
+                            <constraint firstItem="djY-Gt-brk" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="2iG-ea-R42"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dvx-FJ-5up" secondAttribute="trailing" constant="20" id="8Jv-ON-GjL"/>
+                            <constraint firstItem="djY-Gt-brk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="9Q4-by-eZN"/>
                             <constraint firstItem="IHR-YX-vzn" firstAttribute="top" secondItem="WHj-3F-MV1" secondAttribute="bottom" constant="21" id="9gP-F2-R6y"/>
                             <constraint firstItem="WHj-3F-MV1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Ani-MH-iia"/>
                             <constraint firstItem="AgT-AE-lld" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="DHh-YA-Lpn"/>
                             <constraint firstItem="WHj-3F-MV1" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="20" id="Jr5-rr-lmt"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dvx-FJ-5up" secondAttribute="trailing" constant="20" id="PN5-ar-JVz"/>
+                            <constraint firstItem="djY-Gt-brk" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="MBN-DE-uEy"/>
+                            <constraint firstItem="djY-Gt-brk" firstAttribute="top" secondItem="dvx-FJ-5up" secondAttribute="bottom" id="S8z-iQ-EjU"/>
                             <constraint firstItem="IHR-YX-vzn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="35" id="Y3M-N4-2QS"/>
-                            <constraint firstItem="fTr-tY-Frs" firstAttribute="top" secondItem="dvx-FJ-5up" secondAttribute="bottom" constant="8" id="Zxi-E4-afN"/>
-                            <constraint firstItem="fTr-tY-Frs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="mCh-Ek-Ptb"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="WHj-3F-MV1" secondAttribute="trailing" constant="20" id="rgj-AS-bDO"/>
                             <constraint firstItem="AgT-AE-lld" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="rn7-yO-sgw"/>
                             <constraint firstItem="AgT-AE-lld" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="uKh-ah-2i4"/>
@@ -157,6 +178,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="actionBtn" destination="fTr-tY-Frs" id="1dG-Or-Yyh"/>
                         <outlet property="mapView" destination="AgT-AE-lld" id="Fhx-fm-XlR"/>
                     </connections>
                 </viewController>
