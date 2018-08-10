@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		9BE8F37E3CED64E53C2E55CF /* Pods_Hitchhkr.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02CC326F197A46DAC55C4D99 /* Pods_Hitchhkr.framework */; };
+		B9A4B2DB2116927900DC293C /* UiViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9A4B2DA2116927900DC293C /* UiViewExt.swift */; };
 		EB5EF020211548B800A13770 /* LeftSidePanelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5EF01F211548B800A13770 /* LeftSidePanelVC.swift */; };
 		EB5EF0222115496F00A13770 /* ContainerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5EF0212115496F00A13770 /* ContainerVC.swift */; };
 		EB5EF025211555C800A13770 /* CenterVCDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5EF024211555C800A13770 /* CenterVCDelegate.swift */; };
@@ -26,6 +27,7 @@
 /* Begin PBXFileReference section */
 		02CC326F197A46DAC55C4D99 /* Pods_Hitchhkr.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hitchhkr.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		26737CAC2A87FD7F73F5B711 /* Pods-Hitchhkr.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hitchhkr.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Hitchhkr/Pods-Hitchhkr.debug.xcconfig"; sourceTree = "<group>"; };
+		B9A4B2DA2116927900DC293C /* UiViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UiViewExt.swift; sourceTree = "<group>"; };
 		C0908BBDD704D684816B3064 /* Pods-Hitchhkr.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hitchhkr.release.xcconfig"; path = "Pods/Target Support Files/Pods-Hitchhkr/Pods-Hitchhkr.release.xcconfig"; sourceTree = "<group>"; };
 		EB5EF01F211548B800A13770 /* LeftSidePanelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftSidePanelVC.swift; sourceTree = "<group>"; };
 		EB5EF0212115496F00A13770 /* ContainerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerVC.swift; sourceTree = "<group>"; };
@@ -73,6 +75,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		B9A4B2D92116925E00DC293C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B9A4B2DA2116927900DC293C /* UiViewExt.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		EB5EF023211555B700A13770 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
@@ -102,6 +112,7 @@
 		EBD4D5F92108FF0A004D2570 /* Hitchhkr */ = {
 			isa = PBXGroup;
 			children = (
+				B9A4B2D92116925E00DC293C /* Extensions */,
 				EB5EF023211555B700A13770 /* Protocols */,
 				EBF7091C210A25AA009CF2C2 /* Controller */,
 				EBF7091B210A25A4009CF2C2 /* View */,
@@ -264,6 +275,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B9A4B2DB2116927900DC293C /* UiViewExt.swift in Sources */,
 				EB5EF025211555C800A13770 /* CenterVCDelegate.swift in Sources */,
 				EBBFCBCA210AA61B0032A2DA /* CircleView.swift in Sources */,
 				EB5EF020211548B800A13770 /* LeftSidePanelVC.swift in Sources */,

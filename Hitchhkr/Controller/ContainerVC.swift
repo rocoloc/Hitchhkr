@@ -35,7 +35,7 @@ class ContainerVC: UIViewController {
     
     var isHidden: Bool = false //this will allow us to hide the status bar when the left side panel is expanded.
     
-    let centerPanelExpandedOffset: CGFloat = 160 //this is how much do we want the current VC to slide towards the right.
+    let centerPanelExpandedOffset: CGFloat = 100 //this is how much do we want the current VC to slide towards the right.
     
     var tap = UITapGestureRecognizer()
     
@@ -147,14 +147,22 @@ extension ContainerVC: CenterVCDelegate {
         whiteCoverView.backgroundColor = UIColor.white
         whiteCoverView.tag = 25
         
+        // first we create the white cover,
+        
         self.centerController.view.addSubview(whiteCoverView)
-        UIView.animate(withDuration: 0.2) {
-            whiteCoverView.alpha = 0.75
-        }
+        
+        //then we add it as a subview
+        
+        whiteCoverView.fadeTo(AlphaValue: 0.75, withDuration: 0.2)
+        // then we animate that subview to the user
+        
         tap = UITapGestureRecognizer(target: self, action: #selector(animateLeftPanel(shouldExpand:)))
         tap.numberOfTapsRequired = 1
         
+        //we create a gesture recognizer
+        
         self.centerController.view.addGestureRecognizer(tap)
+        //and we add that gesture recognizer to the subview that we justa animated.
     }
     func hideWhiteCoverView() {
         for subview in self.centerController.view.subviews {
@@ -165,7 +173,7 @@ extension ContainerVC: CenterVCDelegate {
                     subview.removeFromSuperview()
                 })
             }
-        }
+        } // here we are basically using the tag property of the white cover to remove it safely, on the fly.
     }
     func shouldShowShadowForCenterViewController(_ status: Bool){
         if status == true {

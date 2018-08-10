@@ -50,9 +50,8 @@ class RoundedShadowButtom: UIButton {
                    
                     spinner.startAnimating() //we also want out invisible spinner to start moving.
                     spinner.center = CGPoint(x: self.frame.width / 2 + 1, y: self.frame.width / 2 + 1) //we want it to be placed in the exact middle of the screen.
-                    UIView.animate(withDuration: 0.3, animations: {
-                        spinner.alpha = 1.0 //and we want the spinner now that is animating to be opaque, AKA presented to the user.
-                        })
+                    spinner.fadeTo(AlphaValue: 1.0, withDuration: 0.3)
+                    
                     }
                 })
                     self.isUserInteractionEnabled = false //and we also disable the buttom so the user cannot trigger its functionality again.
