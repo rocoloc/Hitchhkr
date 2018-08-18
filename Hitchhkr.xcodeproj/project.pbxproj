@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		9BE8F37E3CED64E53C2E55CF /* Pods_Hitchhkr.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02CC326F197A46DAC55C4D99 /* Pods_Hitchhkr.framework */; };
+		B90FD41F211DFABA0022DF01 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B90FD41E211DFABA0022DF01 /* LoginVC.swift */; };
+		B99F9AE821272E3F00803043 /* RoundedCornerTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B99F9AE721272E3F00803043 /* RoundedCornerTextField.swift */; };
 		B9A4B2DB2116927900DC293C /* UiViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9A4B2DA2116927900DC293C /* UiViewExt.swift */; };
 		EB5EF020211548B800A13770 /* LeftSidePanelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5EF01F211548B800A13770 /* LeftSidePanelVC.swift */; };
 		EB5EF0222115496F00A13770 /* ContainerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5EF0212115496F00A13770 /* ContainerVC.swift */; };
@@ -27,6 +29,8 @@
 /* Begin PBXFileReference section */
 		02CC326F197A46DAC55C4D99 /* Pods_Hitchhkr.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hitchhkr.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		26737CAC2A87FD7F73F5B711 /* Pods-Hitchhkr.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hitchhkr.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Hitchhkr/Pods-Hitchhkr.debug.xcconfig"; sourceTree = "<group>"; };
+		B90FD41E211DFABA0022DF01 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		B99F9AE721272E3F00803043 /* RoundedCornerTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCornerTextField.swift; sourceTree = "<group>"; };
 		B9A4B2DA2116927900DC293C /* UiViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UiViewExt.swift; sourceTree = "<group>"; };
 		C0908BBDD704D684816B3064 /* Pods-Hitchhkr.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hitchhkr.release.xcconfig"; path = "Pods/Target Support Files/Pods-Hitchhkr/Pods-Hitchhkr.release.xcconfig"; sourceTree = "<group>"; };
 		EB5EF01F211548B800A13770 /* LeftSidePanelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftSidePanelVC.swift; sourceTree = "<group>"; };
@@ -141,6 +145,7 @@
 				EBBFCBC9210AA61B0032A2DA /* CircleView.swift */,
 				EBBFCBCB210AA8B10032A2DA /* RoundedShadowButtom.swift */,
 				EB736368210A59260002AA46 /* RoundImageView.swift */,
+				B99F9AE721272E3F00803043 /* RoundedCornerTextField.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -149,6 +154,7 @@
 			isa = PBXGroup;
 			children = (
 				EBD4D5FC2108FF0A004D2570 /* HomeVC.swift */,
+				B90FD41E211DFABA0022DF01 /* LoginVC.swift */,
 				EB5EF01F211548B800A13770 /* LeftSidePanelVC.swift */,
 				EB5EF0212115496F00A13770 /* ContainerVC.swift */,
 			);
@@ -277,6 +283,7 @@
 			files = (
 				B9A4B2DB2116927900DC293C /* UiViewExt.swift in Sources */,
 				EB5EF025211555C800A13770 /* CenterVCDelegate.swift in Sources */,
+				B90FD41F211DFABA0022DF01 /* LoginVC.swift in Sources */,
 				EBBFCBCA210AA61B0032A2DA /* CircleView.swift in Sources */,
 				EB5EF020211548B800A13770 /* LeftSidePanelVC.swift in Sources */,
 				EB736369210A59260002AA46 /* RoundImageView.swift in Sources */,
@@ -284,6 +291,7 @@
 				EB736367210A309E0002AA46 /* RoundedShadowView.swift in Sources */,
 				EB5EF0222115496F00A13770 /* ContainerVC.swift in Sources */,
 				EBD4D5FB2108FF0A004D2570 /* AppDelegate.swift in Sources */,
+				B99F9AE821272E3F00803043 /* RoundedCornerTextField.swift in Sources */,
 				EBBFCBCC210AA8B10032A2DA /* RoundedShadowButtom.swift in Sources */,
 				EB736365210A2E790002AA46 /* GradientView.swift in Sources */,
 			);

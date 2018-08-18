@@ -22,5 +22,12 @@ class LeftSidePanelVC: UIViewController {
     }
     
 
-   
+    @IBAction func signUpBtnWasPressed(_ sender: Any) {
+        let storyBoard = UIStoryboard(name: "Main", bundle: Bundle.main)
+        let loginVC = storyBoard.instantiateViewController(withIdentifier: "LoginVC") as? LoginVC
+        if loginVC == nil {
+            print("LoginVC is nil, you idiot")
+        } else {present(loginVC!, animated: true, completion: nil) }
+    }
+    
 }
