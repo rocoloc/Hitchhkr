@@ -63,15 +63,15 @@ class ContainerVC: UIViewController {
         
         if let con = centerController {
             con.view.removeFromSuperview()
-            con.removeFromParentViewController()
+            con.removeFromParent()
         }
         centerController = presentingController
         
         //And here we are basically making sure of removing everything that we have, before parsin in back HomeVC, this way we always have the least amount of view controllers loaded at once, hence using efficiently our device resources.
         
         view.addSubview(centerController.view)
-        addChildViewController(centerController)
-        centerController.didMove(toParentViewController: self)
+        addChild(centerController)
+        centerController.didMove(toParent: self)
         
         //here we are just parsin in the new view and displaying to the user.
     }
@@ -108,8 +108,8 @@ extension ContainerVC: CenterVCDelegate {
     }
     func addChildSidePanelViewController(_ sidePanelController: LeftSidePanelVC){
         view.insertSubview(sidePanelController.view, at: 0)
-        addChildViewController(sidePanelController)
-        sidePanelController.didMove(toParentViewController: self)
+        addChild(sidePanelController)
+        sidePanelController.didMove(toParent: self)
     }
     
     @objc func animateLeftPanel(shouldExpand: Bool) {

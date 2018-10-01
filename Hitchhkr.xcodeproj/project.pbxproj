@@ -11,6 +11,7 @@
 		B90FD41F211DFABA0022DF01 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B90FD41E211DFABA0022DF01 /* LoginVC.swift */; };
 		B99F9AE821272E3F00803043 /* RoundedCornerTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B99F9AE721272E3F00803043 /* RoundedCornerTextField.swift */; };
 		B9A4B2DB2116927900DC293C /* UiViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9A4B2DA2116927900DC293C /* UiViewExt.swift */; };
+		B9F2099C216292F200CB464C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B9F2099B216292F200CB464C /* GoogleService-Info.plist */; };
 		EB5EF020211548B800A13770 /* LeftSidePanelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5EF01F211548B800A13770 /* LeftSidePanelVC.swift */; };
 		EB5EF0222115496F00A13770 /* ContainerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5EF0212115496F00A13770 /* ContainerVC.swift */; };
 		EB5EF025211555C800A13770 /* CenterVCDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5EF024211555C800A13770 /* CenterVCDelegate.swift */; };
@@ -32,6 +33,7 @@
 		B90FD41E211DFABA0022DF01 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		B99F9AE721272E3F00803043 /* RoundedCornerTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCornerTextField.swift; sourceTree = "<group>"; };
 		B9A4B2DA2116927900DC293C /* UiViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UiViewExt.swift; sourceTree = "<group>"; };
+		B9F2099B216292F200CB464C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C0908BBDD704D684816B3064 /* Pods-Hitchhkr.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hitchhkr.release.xcconfig"; path = "Pods/Target Support Files/Pods-Hitchhkr/Pods-Hitchhkr.release.xcconfig"; sourceTree = "<group>"; };
 		EB5EF01F211548B800A13770 /* LeftSidePanelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftSidePanelVC.swift; sourceTree = "<group>"; };
 		EB5EF0212115496F00A13770 /* ContainerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerVC.swift; sourceTree = "<group>"; };
@@ -122,6 +124,7 @@
 				EBF7091B210A25A4009CF2C2 /* View */,
 				EBF7091A210A2599009CF2C2 /* Model */,
 				EBD4D5FA2108FF0A004D2570 /* AppDelegate.swift */,
+				B9F2099B216292F200CB464C /* GoogleService-Info.plist */,
 				EBD4D5FE2108FF0B004D2570 /* Main.storyboard */,
 				EBD4D6012108FF0C004D2570 /* Assets.xcassets */,
 				EBD4D6032108FF0C004D2570 /* LaunchScreen.storyboard */,
@@ -195,6 +198,7 @@
 				TargetAttributes = {
 					EBD4D5F62108FF0A004D2570 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1000;
 					};
 				};
 			};
@@ -222,6 +226,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EBD4D6052108FF0C004D2570 /* LaunchScreen.storyboard in Resources */,
+				B9F2099C216292F200CB464C /* GoogleService-Info.plist in Resources */,
 				EBD4D6022108FF0C004D2570 /* Assets.xcassets in Resources */,
 				EBD4D6002108FF0B004D2570 /* Main.storyboard in Resources */,
 			);
@@ -448,7 +453,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.juliantorres.Hitchhkr;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -468,7 +473,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.juliantorres.Hitchhkr;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

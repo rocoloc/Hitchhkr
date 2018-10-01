@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -15,11 +16,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     fileprivate var containerVC = ContainerVC()
 
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         containerVC = ContainerVC()
         
         window?.rootViewController = containerVC
         window?.makeKeyAndVisible()
+        FirebaseApp.configure()
         
         return true
     }

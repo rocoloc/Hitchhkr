@@ -32,7 +32,7 @@ class RoundedShadowButtom: UIButton {
     func animateButtom(shouldLoad: Bool, withMessage message: String?){
         
         let spinner = UIActivityIndicatorView() // we create a spinner, yai
-        spinner.activityIndicatorViewStyle = .whiteLarge //yes, we want a white AND large spinner for our users to look at.
+        spinner.style = .whiteLarge //yes, we want a white AND large spinner for our users to look at.
         spinner.color = UIColor.darkGray //fancy colour magic code.
         spinner.alpha = 0.0 // but we want it to be transparent, so its there, just so the users cant see it (yet) MUAHAHA
         spinner.hidesWhenStopped = true //this is handy and self explanatory
